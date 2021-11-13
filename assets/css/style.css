@@ -1,0 +1,54 @@
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    
+}
+
+/* Common */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+#header{
+    height: 46px;
+    background-color: #000;
+}
+
+#nav li{
+    display: inline-block;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: white;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none;
+}
+
+#slider{
+    
+}
+
+#content{
+    
+}
+
+#footer{
+    
+}
