@@ -19,6 +19,11 @@ html{
     height: 46px;
     background-color: #000;
     font-size: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
 }
 
 #nav{
@@ -53,6 +58,8 @@ html{
     position: absolute;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 0;
 }
 
 #nav .subnav li{
@@ -91,11 +98,33 @@ html{
 
 /* Slider */
 #slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat;
+    position: relative;
+}
 
+#slider .slider-content{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 42px;
+    text-align: center;
+    width: 100%;
+}
+
+#slider .slider-heading{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#slider .slider-desc{
+    margin-top: 25px;
+    font-size: 15px;
 }
 
 #content{
-    
+
 }
 
 #footer{
