@@ -21,6 +21,10 @@ html{
     font-size: 15px;
 }
 
+#nav{
+    display: inline-block;
+}
+
 #nav li{
     display: inline-block;
     position: relative;
@@ -63,6 +67,26 @@ html{
 
 #nav li:hover .subnav{
     display: block;
+}
+
+.arr-down-icon{
+    font-size: 14px;
+}
+
+.search-btn{
+    float: right;
+}
+
+.search-btn .search-icon{
+    font-size: 20px;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+.search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
 }
 
 /* Slider */
