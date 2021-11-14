@@ -14,6 +14,10 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.clear{
+    clear: both;
+}
+
 /* Header */
 #header{
     height: 46px;
@@ -123,9 +127,61 @@ html{
     font-size: 15px;
 }
 
-#content{
+/* Content : About*/
 
+#content{
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
+
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+#content .content-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-content{
+    margin-top: 15px;
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.member-list{
+    padding: 32px 0;
+}
+
+.member-list .member{
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+}
+
+.member-list .member-name{
+    font-size: 15px;
+}
+
+.member-list .member-img{
+    width: 124px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
 
 #footer{
     
