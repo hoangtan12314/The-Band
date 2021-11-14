@@ -18,6 +18,14 @@ html{
     clear: both;
 }
 
+.text-white{
+    color: #fff !important;
+}
+
+#nav, .subnav, .ticket-list{
+    list-style: none;
+}
+
 /* Header */
 #header{
     height: 46px;
@@ -130,14 +138,14 @@ html{
 /* Content : About*/
 
 #content{
-    margin-top: 64px;
-    margin-bottom: 64px;
+    
 }
 
 #content .content-section{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding: 64px 0 112px 0;
 }
 
 #content .content-heading{
@@ -180,8 +188,89 @@ html{
     width: 124px;
     margin-top: 15px;
     border-radius: 4px;
+    
 }
 
+/* Tour */
+.tour-section{
+    background-color: #000;
+}
+
+.tour-section .ticket-list{
+    background-color: #fff;
+    margin-top: 33px;
+}
+
+.ticket-list li{
+    padding: 11px 16px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    color: #757575;
+}
+
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 8px;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -4px;
+}
+
+/* Tour Location */
+
+.location-list{
+    margin: 32px -8px;
+}
+
+.location-list .location{
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+
+.location-list .location-img{
+    width: 100%;
+    display: block;
+}
+
+.location-list .location-content{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.location-list .loc-heading{
+    font-size: 15px;
+}
+
+.location-list .loc-date{
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.location-list .loc-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.location-list .buy-btn{
+    margin-top: 15px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+}
 
 #footer{
     
