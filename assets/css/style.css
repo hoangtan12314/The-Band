@@ -381,8 +381,10 @@ html{
 .modal-container{
     background-color: #fff;
     position: relative;
+    min-height: 200px;
     width: 900px;
     max-width: calc(100% - 32px);
+    animation: modalFadeIn ease 0.5s;
 }
 
 .modal-close{
@@ -455,6 +457,17 @@ html{
 
 .modal-footer a{
     color: #2196F3;
+}
+
+@keyframes modalFadeIn{
+    from{
+        transform: translateY(-140px);
+        opacity: 0;
+    } 
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 
