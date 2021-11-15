@@ -12,6 +12,7 @@
 /* Common */
 html{
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .clear{
@@ -331,8 +332,35 @@ html{
     padding: 11px 8px;
 }
 
+.map{
+    padding-top: 50%;
+    background: url(/assets/img/map.jpg) top center / cover no-repeat;
+}
+
 #footer{
-    
+    height: 215px;
+    text-align: center;
+    padding-top: 64px;
+}
+
+.social-list{
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+.social-list i:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.copyright{
+    font-size: 15px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+.copyright a{
+    color: rgba(0, 0, 0);
 }
 
 /* Modal */
