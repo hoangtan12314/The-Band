@@ -89,14 +89,18 @@ html{
     right: 0;
     left: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav{
     display: inline-block;
 }
 
-#nav li{
+#nav > li{
     display: inline-block;
+}
+
+#nav li{ 
     position: relative;
 }
 
@@ -144,16 +148,31 @@ html{
 .arr-down-icon{
     font-size: 14px;
 }
-
+#header .mobile-menu-btn,
 .search-btn{
     float: right;
 }
-
+#header .mobile-menu-btn .menu-icon,
 .search-btn .search-icon{
     font-size: 20px;
     color: #fff;
     line-height: 46px;
     padding: 0 21px;
+}
+
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
 }
 
 .search-btn:hover{

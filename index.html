@@ -7,6 +7,7 @@
     <title>Practice</title>
     <link rel="icon" type="image/png" href="./assets/img/band.png"/>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -36,6 +37,10 @@
             <!-- Search button: begin -->
             <div class="search-btn">
                 <i class="ti-search search-icon"></i>
+            </div>
+
+            <div id = "js-mobile-menu-btn" class = "mobile-menu-btn">
+                <i class="ti-menu menu-icon"></i>
             </div>
             <!-- Search button: begin -->
         </div>
@@ -270,6 +275,23 @@
         modalContainer.addEventListener("click", (event) => {
             event.stopPropagation();
         });
+
+        // Handle Menu
+        const header = document.getElementById("header");
+        const menuBtn = document.getElementById("js-mobile-menu-btn")
+        const headerHeight = header.offsetHeight;
+        const handleMenuBtn = () => {
+            let isClosed = header.clientHeight === headerHeight;
+            isClosed ? header.style.height = 'auto' : header.style.height = null;
+        }
+        menuBtn.addEventListener("click", handleMenuBtn)
+
+        const navItems = document.querySelectorAll('#nav li a[href*="#"]');
+
+        for(let navItem of navItems){
+            navItem.addEventListener("click", () => header.style.height = null)
+        }
+
     </script>
 </body>
 </html>
